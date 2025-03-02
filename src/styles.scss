@@ -1,1 +1,151 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'ngx-toastr/toastr';
+
+//Themes
+[data-theme="slate"] {
+    --bg: #f8fafc;
+    --bg-secondary: #f1f5f9;
+    --border: #e2e8f0;
+    --muted: #cbd5e1;
+    --text-muted: #94a3b8;
+    --text: #64748b;
+    --text-strong: #475569;
+    --primary: #334155;
+    --primary-hover: #1e293b;
+    --accent: #0f172a;
+    --accent-dark: #020617;
+}
+
+[data-theme="grey"] {
+    --bg: #f9fafb;
+    --bg-secondary: #f3f4f6;
+    --border: #e5e7eb;
+    --muted: #cbd5e1;
+    --text-muted: #9ca3af;
+    --text: #64748b;
+    --text-strong: #4b5563;
+    --primary: #374151;
+    --primary-hover: #1f2937;
+    --accent: #111827;
+    --accent-dark: #030712;
+}
+
+[data-theme="zinc"] {
+    --bg: #fafafa;
+    --bg-secondary: #f4f4f5;
+    --border: #e4e4e7;
+    --muted: #d4d4d8;
+    --text-muted: #a1a1aa;
+    --text: #71717a;
+    --text-strong: #52525b;
+    --primary: #3f3f46;
+    --primary-hover: #27272a;
+    --accent: #18181b;
+    --accent-dark: #09090b;
+}
+
+[data-theme="neutral"] {
+    --bg: #fafafa;
+    --bg-secondary: #f5f5f5;
+    --border: #e5e5e5;
+    --muted: #d4d4d4;
+    --text-muted: #a3a3a3;
+    --text: #737373;
+    --text-strong: #525252;
+    --primary: #404040;
+    --primary-hover: #262626;
+    --accent: #171717;
+    --accent-dark: #0a0a0a;
+}
+
+[data-theme="stone"] {
+    --bg: #fafaf9;
+    --bg-secondary: #f5f5f4;
+    --border: #e7e5e4;
+    --muted: #d6d3d1;
+    --text-muted: #a8a29e;
+    --text: #78716c;
+    --text-strong: #57534e;
+    --primary: #44403c;
+    --primary-hover: #292524;
+    --accent: #1c1917;
+    --accent-dark: #0c0a09;
+}
+
+[data-theme="red"] {
+    --bg: #fef2f2;
+    --bg-secondary: #fee2e2;
+    --border: #fecaca;
+    --muted: #fca5a5;
+    --text-muted: #f87171;
+    --text: #ef4444;
+    --text-strong: #dc2626;
+    --primary: #b91c1c;
+    --primary-hover: #991b1b;
+    --accent: #7f1d1d;
+    --accent-dark: #450a0a;
+}
+
+[data-theme="orange"] {
+    --bg: #fff7ed;
+    --bg-secondary: #ffedd5;
+    --border: #fed7aa;
+    --muted: #fdba74;
+    --text-muted: #fb923c;
+    --text: #f97316;
+    --text-strong: #ea580c;
+    --primary: #c2410c;
+    --primary-hover: #9a3412;
+    --accent: #7c2d12;
+    --accent-dark: #431407;
+}
+
+
+
+// Toast styles
+.toast-success {
+    border: 1px solid var(--border) !important;
+    border-radius: 0.2rem !important;
+    background-color: var(--accent-dark) !important;
+    color: var(--bg) !important;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+.toast-error {
+    background-color: crimson !important;
+    color: var(--bg) !important;
+}
+
+.toast-info {
+    background-color: #17a2b8 !important;
+    color: var(--bg) !important;
+}
+
+.toast-warning {
+    background-color: #ffc107 !important;
+    color: black !important;
+}
+
+.toast-progress {
+    background-color: #ffffffaf !important;
+    height: 100% !important;
+}
+
+.toast-close-button {
+    color: white !important;
+    font-size: 18px !important;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+}

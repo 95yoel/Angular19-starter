@@ -1,0 +1,32 @@
+select{
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    outline: none;
+    border:1px solid var(--border);
+    background-color: var(--muted);
+    color: var(--primary);
+    box-shadow: var(--accent-dark);
+}
+
+option{
+    color: var(--text);
+    background-color: var(--bg-secondary)
+}
+
+p{
+    display: flex;
+    color: var(--text);
+}
+
+button{
+    border: 1px solid var(--border);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--bg-secondary);
+    color: #333;
+    cursor: pointer;
+}
+
+lucide-icon{
+    margin-left: 5px;
+}
