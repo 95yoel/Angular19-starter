@@ -20,4 +20,4 @@ This project is a minimalistic powerful Angular 19 starter, designed to accelera
 
     -📝 Basic GitHub Actions CI pipeline (linting on every push/PR)
 
-    -🪵 Integrated with ts-logger: [TS-LOGGER](https://github.com/95yoel/ts-logger/)
+    -🪵 Integrated with ts-logger [TS-LOGGER](https://github.com/95yoel/ts-logger/)
