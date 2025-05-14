@@ -21,11 +21,11 @@ export const errorInterceptor: HttpInterceptorFn = (req, next) => {
           case 0:
             errorMessage = 'No internet connection!'
             toast.error(errorMessage, 'Network Error')
-            break;
+            break
           case 400:
             errorMessage = 'Bad Request - Invalid data!'
             toast.error(errorMessage, 'Error')
-            break;
+            break
           case 401:
             errorMessage = 'Session expired. Please login again.'
             toast.warning(errorMessage, 'Unauthorized')
@@ -37,7 +37,7 @@ export const errorInterceptor: HttpInterceptorFn = (req, next) => {
           case 404:
             errorMessage = 'The requested resource was not found.'
             toast.info(errorMessage, 'Not Found')
-            break;
+            break
           case 500:
             errorMessage = 'Internal Server Error. Try again later.'
             toast.error(errorMessage, 'Server Error')

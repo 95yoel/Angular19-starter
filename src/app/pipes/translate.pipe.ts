@@ -1,5 +1,5 @@
-import { inject, Pipe, PipeTransform, Signal } from '@angular/core';
-import { TranslationService } from '../services/translation.service';
+import { inject, Pipe, PipeTransform, Signal } from '@angular/core'
+import { TranslationService } from '../services/translation.service'
 
 /**
  * Translate Pipe

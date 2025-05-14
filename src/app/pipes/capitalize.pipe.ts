@@ -1,5 +1,5 @@
-import { Pipe, PipeTransform } from '@angular/core';
-import { Utils } from '../services/utils.service';
+import { Pipe, PipeTransform } from '@angular/core'
+import { Utils } from '../services/utils.service'
 
 /**
  * Capitalize Pipe

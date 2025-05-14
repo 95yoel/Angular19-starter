@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
-import { computed, inject, Injectable, signal } from '@angular/core';
-import { firstValueFrom } from 'rxjs';
-import { Notification } from './notification.service';
+import { HttpClient } from '@angular/common/http'
+import { computed, inject, Injectable, signal } from '@angular/core'
+import { firstValueFrom } from 'rxjs'
+import { Notification } from './notification.service'
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ import { Notification } from './notification.service';
 export class TranslationService {
 
   public currentLang = signal<string>(localStorage.getItem('lang') || 'en')
-  private readonly toast = inject(Notification, { optional: true });
+  private readonly toast = inject(Notification, { optional: true })
 
   private translations = signal<Record<string, string>>({})
 
@@ -38,12 +38,12 @@ export class TranslationService {
       this.translations.set(data)
     } catch (error) {
       if (this.toast) {
-        this.toast.error('Language not found', 'Error')
+        this.toast.error('Language not found:\n'+error, 'Error')
       }
     }
   }
 
   translate = computed(() => {
-    return (key: string) => this.translations()[key] || key
+    return (key: string):string => this.translations()[key] || key
   })
 }

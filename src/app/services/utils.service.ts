@@ -56,6 +56,7 @@ export class Utils {
    * @returns {boolean} 'true' if the email is valid
    */
   static isValidEmail(email: string): boolean {
+    // eslint-disable-next-line no-useless-escape
     return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)
   }
 
@@ -117,7 +118,7 @@ export class Utils {
  * Utils.truncateText("Hello, this is a long text!", 10); // "Hello, thi..."
  */
   static truncateText(text: string, maxLength: number): string {
-    return text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
+    return text.length > maxLength ? text.slice(0, maxLength) + '...' : text
   }
 
 
@@ -148,7 +149,7 @@ export class Utils {
    * @returns {string} - Random characters
    */
   static randomString(length: number = 10): string {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
     return Array.from({ length }, () => chars.charAt(Utils.randomNumber(0, chars.length - 1))).join('')
   }
 
@@ -162,9 +163,13 @@ export class Utils {
  * const params = { page: 2, filter: 'active' };
  * Utils.objectToQueryParams(params); // "page=2&filter=active"
  */
-  static objectToQueryParams(obj: Record<string, any>): string {
-    return new URLSearchParams(obj).toString()
-  }
+  static objectToQueryParams(obj: Record<string, unknown>): string {
+  const safeObj: Record<string, string> = Object.fromEntries(
+    Object.entries(obj).map(([k, v]) => [k, String(v)])
+  )
+  return new URLSearchParams(safeObj).toString()
+}
+
 
   /**
  * Converts a string into a URL-friendly slug.
@@ -179,7 +184,7 @@ export class Utils {
       .trim()
       .replace(/[\s]+/g, '-') // Replace spaces for '-'
       .replace(/[^\w-]+/g, '') // Delete special characters
-      .replace(/--+/g, '-'); // Prevent multiple '-'
+      .replace(/--+/g, '-') // Prevent multiple '-'
   }
 
   //#region MATH
@@ -299,7 +304,7 @@ export class Utils {
  * Utils.isEmptyArray([]); // true
  * Utils.isEmptyArray([null, undefined, false]); // true
  */
-  static isEmptyArray(array: any[]): boolean {
+  static isEmptyArray(array: unknown[]): boolean {
     return array.length === 0 || array.every(item => !item)
   }
 
