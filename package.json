@@ -23,6 +23,7 @@
     "lucide-angular": "^0.477.0",
     "ngx-toastr": "^19.0.0",
     "rxjs": "~7.8.0",
+    "ts-logger": "github:95yoel/ts-logger",
     "tslib": "^2.3.0",
     "uuid": "^11.1.0",
     "zone.js": "~0.15.0"
