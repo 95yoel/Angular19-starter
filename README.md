@@ -6,18 +6,11 @@ This project is a minimalistic powerful Angular 19 starter, designed to accelera
 
 ## ✨ Key Features
 
-    -✅ Angular 19 with a clean, modular structure
-
-    -🎨 Native theme system (automatically stored in localStorage)
-
-    -🌐 Multi-language support with dynamic language switching (English/Spanish included)
-
-    -⚠️ Global error handling using HTTP interceptors
-
-    -🔔 Built-in Toast notifications
-
-    -🚧 ESLint configured for clean, consistent code
-
-    -📝 Basic GitHub Actions CI pipeline (linting on every push/PR)
-
-    - 🪵 Integrated with ts-logger: [TS-LOGGER](https://github.com/95yoel/ts-logger/)
+- ✅ Angular 19 with a clean, modular structure
+- 🎨 Native theme system (automatically stored in localStorage)
+- 🌐 Multi-language support with dynamic language switching (English/Spanish included)
+- ⚠️ Global error handling using HTTP interceptors
+- 🔔 Built-in Toast notifications
+- 🚧 ESLint configured for clean, consistent code
+- 📝 Basic GitHub Actions CI pipeline (linting on every push/PR)
+- 🪵 Integrated with ts-logger: [TS-LOGGER](https://github.com/95yoel/ts-logger/)
