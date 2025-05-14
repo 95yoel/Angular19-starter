@@ -1,6 +1,10 @@
 # Angular19 Starter
 
 [![CI](https://github.com/95yoel/Angular19-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/95yoel/Angular19-starter/actions/workflows/ci.yml)
+![License](https://img.shields.io/github/license/95yoel/Angular19-starter)
+![Language](https://img.shields.io/github/languages/top/95yoel/Angular19-starter)
+![Last commit](https://img.shields.io/github/last-commit/95yoel/Angular19-starter)
+
 
 This project is a **minimalistic powerful Angular 19 starter**, built to accelerate the creation of modern, modular, and maintainable applications.
 
