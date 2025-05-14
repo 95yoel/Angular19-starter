@@ -14,3 +14,25 @@ This project is a minimalistic powerful Angular 19 starter, designed to accelera
 - 🚧 ESLint configured for clean, consistent code
 - 📝 Basic GitHub Actions CI pipeline (linting on every push/PR)
 - 🪵 Integrated with ts-logger: [TS-LOGGER](https://github.com/95yoel/ts-logger/)
+
+## 🧰 Built-in Tools
+
+This starter includes additional tools to ease your development:
+- [ts-logger](https://github.com/95yoel/ts-logger/): Advanced logger specifically designed for modern TypeScript applications.
+- [ESlint](https://eslint.org/): Keep your code clean, consistent, and free of basic errors.
+- [GitHub-Actions-CI](https://github.com/features/actions/): Automated linting on every push and PR.
+
+## 🚀 CI/CD Pipeline
+
+This project uses **GitHub Actions** to automate checks and ensure reliability on every commit to `main`.
+
+The pipeline includes:
+
+- ✅ Linting with ESLint
+
+
+You can view the full workflow [here](https://github.com/Angular19-starter/ts-logger/actions/workflows/pipeline.yml).
+
+## 📄 License
+
+MIT © [95yoel](https://github.com/95yoel)
