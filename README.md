@@ -2,7 +2,9 @@
 
 [![CI](https://github.com/95yoel/Angular19-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/95yoel/Angular19-starter/actions/workflows/ci.yml)
 ![License](https://img.shields.io/github/license/95yoel/Angular19-starter)
-![Languages](https://img.shields.io/badge/languages-TypeScript%20%7C%20HTML%20%7C%20SCSS-blue)
+![Language](https://img.shields.io/github/languages/top/95yoel/Angular19-starter)
+![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=fff)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?logo=sass&logoColor=fff)
 ![Last commit](https://img.shields.io/github/last-commit/95yoel/Angular19-starter)
 
 
