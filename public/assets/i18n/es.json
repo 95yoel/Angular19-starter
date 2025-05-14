@@ -7,6 +7,8 @@
   "starter_box_5": "Soporte multilenguaje, permitiendo cambios de idioma dinámicos.",
   "starter_box_6": "Manejo global de errores con interceptores HTTP.",
   "starter_box_7": "Servicio de notificaciones toast integrado para retroalimentación en tiempo real.",
+  "starter_box_8": "Incluye ts-logger: un logger en TypeScript con estilos, grupos, JSON y temporizadores.",
+  "starter_box_9": "Pipeline de GitHub Actions preconfigurado con verificación de ESLint en push y PR.",
   "button_success": "Mostrar notificación de éxito",
   "button_error": "Mostrar toast de error",
   "theme": "Tema",

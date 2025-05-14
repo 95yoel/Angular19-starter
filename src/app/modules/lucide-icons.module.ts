@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core'
-import { LucideAngularModule, BadgeEuro, Pyramid, AppWindow, FolderKanban, Database, Squirrel, Earth, Siren, Bell} from 'lucide-angular'
+import { LucideAngularModule, BadgeEuro, Pyramid, AppWindow, FolderKanban, Database, Squirrel, Earth, Siren, Bell, GitBranch, LogOut} from 'lucide-angular'
 
 /**
  * Lucide Icons Module 
@@ -20,7 +20,9 @@ import { LucideAngularModule, BadgeEuro, Pyramid, AppWindow, FolderKanban, Datab
       Database,
       Earth,
       Siren,
-      Bell
+      Bell,
+      GitBranch,
+      LogOut
     })
   ],
   exports: [
